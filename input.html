@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 2번째 개인 과제</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <!-- ======= 네비게이션 바 ======= -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">웹프로그래밍 2번째 개인 과제</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="table.html">table</a></li>
+          <li><a href="media.html">media</a></li>
+          <li><a href="input.html">input</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ======= 메인 섹션 ======= -->
+    <section class="main">
+      <div class="container">
+        <h2>입력 폼:신상정보</h2>
+        <!-- ======= 하프 라인 ======= -->
+        <hr />
+
+        <form action="submit.php" method="post">
+          <label for="name">이름:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">이메일:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="gender">성별:</label>
+          <select id="gender" name="gender">
+            <option value="male">남성</option>
+            <option value="female">여성</option></select
+          ><br /><br />
+
+          <label for="message">메시지:</label><br />
+          <textarea id="message" name="message" rows="4" cols="50"></textarea
+          ><br /><br />
+
+          <input type="reset" value="내용 삭제" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
